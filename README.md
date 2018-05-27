@@ -1,6 +1,8 @@
 MEAN stack for user profile management.
 
-<img src="https://github.com/sabawasim/MEAN_stack_user_profiles_management/tree/master/img/01.png"></img>
+<img src="https://raw.githubusercontent.com/sabawasim/MEAN_stack_user_profiles_management/master/img/1.png"></img>
+<img src="https://raw.githubusercontent.com/sabawasim/MEAN_stack_user_profiles_management/master/img/2.png"></img>
+<img src="https://raw.githubusercontent.com/sabawasim/MEAN_stack_user_profiles_management/master/img/3.png"></img>
 All Screenshots : https://github.com/sabawasim/MEAN_stack_user_profiles_management/tree/master/img/
 
 Installation / Deployment
