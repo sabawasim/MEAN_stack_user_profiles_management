@@ -1,0 +1,5 @@
+﻿{
+    "connectionString": "mongodb://localhost:27017/mean-user-management",
+    "apiUrl": "http://localhost:4000",
+    "secret": "MY-SECRET-CODE"
+}

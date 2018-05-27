@@ -1,0 +1,84 @@
+﻿
+
+<div class="col-lg-12 col-sm-12 center">
+        <div class="card hovercard">
+            <div class="card-background">
+                <img class="card-bkimg" alt="" src="../statics/user.png">
+               
+            </div>
+            <div class="useravatar">
+                <img alt="" src="../statics/user.png">
+            </div>
+            <div class="card-info"> <span class="card-title">Welcome : {{currentUser.firstName}} {{currentUser.lastName}}</span>
+    
+            </div>
+        </div>
+        
+    
+            <div class="well">
+          <div class="tab-content">
+            <div class="tab-pane fade in active" id="tab1">
+              <button  class="btn btn-info" (click)="createProfile()">Add New Profile</button>
+              <a [routerLink]="['/login']" class="btn btn-warning">Logout</a>
+            </div>
+           
+          </div>
+        </div>
+        
+        </div>
+        <h2 class="active"> Your listed profiles</h2>
+        <table class="table table-striped table-hover" *ngIf="allProfiles">
+                <thead>
+                  <tr class = "success">
+                    <th>Designation</th>
+                    <th>Company</th>
+                    <th>Salary</th>
+                    <th>City</th>
+                    <th>Year</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let single_row of allProfiles;let i=index;">
+                    <td>{{single_row.designation}}</td>
+                    <td>{{single_row.company}}</td>
+                    <td>{{single_row.salary}}</td>
+                    <td>{{single_row.city}}</td>
+                    <td>{{single_row.year}}</td>
+                    <td><button class="btn btn-warning" (click)="editProfile(single_row)">Edit</button></td>
+                    <td><button class="btn btn-danger" (click)="deleteProfile(single_row)">Delete</button></td>
+                    
+                  </tr>
+                  
+                </tbody>
+              </table>
+
+
+<!-- Modal -->
+<div id="myModal" class="modal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Profile</h4>
+      </div>
+      <div class="modal-body">
+            
+                    <input type="text" id="login" class="form-container" name="company" [(ngModel)]="selected_profile.company" #company required placeholder="Company">
+                    <input type="text" id="login" class="form-container" name="salary" [(ngModel)]="selected_profile.salary"  #salary required placeholder="Salary">
+                    <input type="text" id="login" class="form-container" name="year" [(ngModel)]="selected_profile.year" #year required placeholder="Year">
+                    <input type="text" id="login" class="form-container" name="designation" [(ngModel)]="selected_profile.designation"  #designation required placeholder="Designation">
+                    <input type="text" id="login" class="form-container" name="city" [(ngModel)]="selected_profile.city"  #city required placeholder="City">
+                    <input type="submit" class="form-container center" style="margin-left:100px" (click)="submitprofile()" value="Submit Profile">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+      
