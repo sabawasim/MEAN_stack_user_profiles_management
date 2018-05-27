@@ -1,5 +1,7 @@
 MEAN stack for user profile management.
-@saba.wasim
+
+<img src="https://github.com/sabawasim/MEAN_stack_user_profiles_management/tree/master/img/01.png"></img>
+All Screenshots : https://github.com/sabawasim/MEAN_stack_user_profiles_management/tree/master/img/
 
 Installation / Deployment
 
@@ -20,3 +22,5 @@ Installation / Deployment
     8. cd server
     9. npm start
     10. npm test
+
+@2018 @saba.wasim
