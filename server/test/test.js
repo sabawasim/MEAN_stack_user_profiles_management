@@ -10,7 +10,6 @@ var auth="";
 var x=this;
 var profile="";
 var id="";
-// This agent refers to PORT where program is runninng.
 
 var server = supertest.agent("http://localhost:4000");
 
